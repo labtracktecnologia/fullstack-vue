@@ -23,7 +23,7 @@
         <router-link class="btn btn-sm btn-success" :to="item._id">
           Editar
         </router-link>
-        <button @click="excluir(item._id)" class="btn btn-sm btn-danger" type="button">
+        <button @click="excluir(item._id)" class="btn ml-2 btn-sm btn-danger" type="button">
           Excluir
         </button>
       </template>
@@ -58,6 +58,10 @@ export default {
   methods: {
     async load () {
       this.records = await this.service.findAll(this.filterValue)
+    },
+    async excluir (id) {
+      await this.service.remove(id)
+      this.load()
     }
   }
 }
