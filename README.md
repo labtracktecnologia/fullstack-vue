@@ -48,11 +48,11 @@ Vue.use(BootstrapVue)
 - Veja os componentes que você pode substituir por bibliotecas já bem conceituadas que atenderão sua necessidade, caso necessário, crie o seu componente em cima desse já existente para customizá-lo as suas necessidades
 - Reescreva os componentes mais básicos antes de ir para os mais complexos
 - Algumas tags são bem parecidas entre VueJS e AngularJS
-. ng-model -> v-model
-. ng-click -> @click
-. ng-submit -> @submit
++ ng-model -> v-model
++ ng-click -> @click
++ ng-submit -> @submit
 - A utilização do vue-router em comparação com o ui-router é tranquila, porém observe:
-. a tag "<a>" não deve ser usada, no lugar dela utilize a "<router-link>"
-. no lugar da "<ui-view>" utilize a tag "<router-view>"
-. o sistema em árvore é construído no vetor do vue-router pela propriedade "children"
-. não deixe uma rota vazia sem a propriedade "redirect"
++ a tag "```<a>```" não deve ser usada, no lugar dela utilize a "```<router-link>```"
++ no lugar da "```<ui-view>```" utilize a tag "```<router-view>```"
++ o sistema em árvore é construído no vetor do vue-router pela propriedade "children"
++ não deixe uma rota vazia sem a propriedade "redirect"
